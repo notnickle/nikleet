@@ -11,8 +11,8 @@ def mergeTwoLists(self, list1, list2):
 
 
 
-def linkedListProbSelect():
-    print("Please select from the list of problems: \n")
+def linkedListProbSelect(result_label):
+    result_label.config(text="Function for linked list problems executed.",pady=10, padx=200)
     
     
     return

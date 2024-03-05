@@ -22,3 +22,9 @@ Created to help me practice LeetCode questions more comfortably.
 ## Library(Method) Structure:
 >   nik_LeetPractice.py will hold main driver, mode select
 >   each type of datastructure problem will have their own .py file with problem selector, open_data method
+
+
+## Problem List:
+
+### Misc:
+1. Two Sum
