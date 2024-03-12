@@ -4,21 +4,20 @@ from tkinter import messagebox
 
 
 #Add two numbers problem
-def addTwoNumbers(result_label):
-    result_label.config(text="Function for the miscellaneous problem 'Two Sum' executed.",pady=10, padx=200)    
+def addTwoNumbers(top_label):
+    top_label.config(text="Function for the Linked_List problem 'Add Two Numbers' executed.",pady=10, padx=200)    
     return
 
 
-def mergeTwoLists(result_label):
-    result_label.config(text="Function for the miscellaneous problem 'Two Sum' executed.",pady=10, padx=200)    
+def mergeTwoLists(top_label):
+    top_label.config(text="Function for the Linked_List problem 'Merge Two Lists' executed.",pady=10, padx=200)    
     return
 
 
 
 
 
-def probSelect(listbox, top_label, result_label):
-    result_label.config(text="Function for linked list problems executed.",pady=10, padx=200)
+def probSelect(listbox, top_label):
     top_label.config(text="Choose a linked list problem")
     # Insert problems into the Listbox along with corresponding functions
     listbox.delete(0,tk.END)
