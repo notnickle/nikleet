@@ -7,12 +7,13 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkinter import font
 
+
 # Create the main window
 root = tk.Tk()
 root.title("nikLeet")
 icon = tk.PhotoImage(file = "nikleet.png")
 root.iconphoto(False, icon)
-custom_font = font.Font(family="Comic Sans MS", size = 24, weight="bold")
+custom_font = font.Font(family="Comic Sans MS", size = 18, weight="bold")
 mode = ''
 
 
@@ -30,7 +31,6 @@ def on_m1button_click():
             forget_m1()   
             m2_button.pack(pady=10)
 
-
     else:
         result_label.config(text="No item selected")
 
@@ -43,8 +43,8 @@ def on_m2button_click():
             selected_item = listbox.get(selected_index)
             selected_library = misc.problem_mapping.get(selected_item)
             if selected_library:
-                selected_library(top_label)
                 forget_m2()
+                selected_library(top_label, root, selected_item)
 
     elif mode.lower() == 'linked_list':
         selected_index = listbox.curselection()
@@ -52,8 +52,8 @@ def on_m2button_click():
             selected_item = listbox.get(selected_index)
             selected_library = linked_list.problem_mapping.get(selected_item)
             if selected_library:
-                selected_library(top_label)
                 forget_m2() 
+                selected_library(top_label)
     else:
         result_label.config(text="No item selected")
 
